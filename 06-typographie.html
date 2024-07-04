@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typographie </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--si on veut que notre h6 ait la meme taille que notre h1 on peut ajouter
+    la classe h1(voir balise h6
+    NB:la taille dont on parle c'est la taille d'un élément contenu dans une balise h1 et non du style qu'on
+    a appliquer à notre balise h1 )
+    display-1 permet d'exagérer dans la taille de l'élément 
+    Si je veux pas de style au niveau de mes listes c'est à dire enlever les points ou numérotation
+    on utilise la classe list-unstyled
+    Si je veux mettre les éléments de ma liste cote à cote on utilise list-inline dans 
+    le ul et ol et dans chaque élément de ma liste ajouter list-inline-item
+    Pour centrer mon titre c'est la class text-center
+    Si on veut centrer tout les éléments il suffit de mettre text-center au niveau de la classe container
+    La classe text-start c'est pour justifier l'élément à gauche
+    La classe text-end pour justifier à droite 
+    -->
+    <div class="container">
+      <!-- 
+        display-1 permet d'exagérer dans la taille de l'élément
+      text-center pour centrer l'élément -->
+        <h1 class="display-1 text-center">Balise H1</h1>
+        <h2 class="text-center">Balise H2</h2>
+        <h3>Balise H3</h3>
+        <h4 class="text-start">Balise H4</h4>
+        <h5>Balise H5</h5>
+        <h6 class="h1">Balise H6</h6>
+        <p class="display-2 text-end"> Mettez en évidence du texte</p>
+        <h2>Listes à puces</h2>
+        <ul class="list-unstyled">
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+            <li>Element 5</li>
+        </ul>
+        <h2>Listes ordonnée</h2>
+        <ol class="list-inline">
+            <li class="list-inline-item">Element 1</li>
+            <li class="list-inline-item">Element 2</li>
+            <li class="list-inline-item">Element 3</li>
+            <li class="list-inline-item">Element 4</li>
+            <li class="list-inline-item">Element 5</li>
+        </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

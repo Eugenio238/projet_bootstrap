@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autre méthode de grille responsive 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Au lieu d'agir sur l'élément col nous allons agir directement sur l'élément
+    parent qui es la classe row,c'est à dire que dans le fichier précédent on a conditionner la place 
+    qu'allait prendre nos éléments sur une meme ligne 
+    Je veux un affichage sur une colonne c'est à dire mes élément vont s'afficher en une seule colonnes
+    c'est class="row row-cols-1" tout les éléments seront sur la meme colonne les uns en bas des autres
+    Si je veux un affichage en deux colonnes donc on aura 2 éléments sur chaque colonnes 
+    on fera row-cols-2 
+    row-cols-md-2 sur un écran md je veux un affichage en 2 colonnes soit 2 éléments par colonnes
+    row-cols-lg-4 sur un écran lg affichage en 4 colonne soit 1 éléments par colonne-->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+           <div class="col">
+               <h1>Colonne 1 </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Eos ducimus eius recusandae voluptatibus quam eveniet commodi
+            beatae, laudantium ipsam asperiores incidunt delectus rem maxime 
+            qui nostrum corrupti facilis, quo enim?</p>
+           </div>
+           <div class="col">
+               <h1>Colonne 2 </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Eos ducimus eius recusandae voluptatibus quam eveniet commodi
+            beatae, laudantium ipsam asperiores incidunt delectus rem maxime 
+            qui nostrum corrupti facilis, quo enim?</p>
+           </div>
+           <div class="col">
+               <h1>Colonne 3 </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Eos ducimus eius recusandae voluptatibus quam eveniet commodi
+            beatae, laudantium ipsam asperiores incidunt delectus rem maxime 
+            qui nostrum corrupti facilis, quo enim?</p>
+           </div>
+           <div class="col">
+               <h1>Colonne 4 </h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Eos ducimus eius recusandae voluptatibus quam eveniet commodi
+            beatae, laudantium ipsam asperiores incidunt delectus rem maxime 
+            qui nostrum corrupti facilis, quo enim?</p>
+           </div>
+        </div>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

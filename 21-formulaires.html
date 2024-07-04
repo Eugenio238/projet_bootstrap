@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Les formulaires </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+<body>
+    <!-- Formulaire 
+    -->
+
+    <div class="container py-3">
+        <form action="">
+            <div class="mb-3">
+                <!-- for c'est l'étiquette -->
+                <label class="form-label" for="name">Nom</label>
+                <!-- Les champs vont prendre toute la largeur de leur container 
+                On peut augmenter la taille des champs avec form-control-lg
+                Pour le dimunier c'est sm au lieu de lg
+                On peut désactiver un champs avec l'attribu disabled-->
+
+                <input class="form-control form-control-lg" type="text" name="name" id="name" disabled>
+            </div>
+            <div class="mb-3">
+                <!-- for c'est l'étiquette -->
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control form-control-sm" type="email" name="email" id="email">
+            </div>
+            <div>
+                <!-- for c'est l'étiquette -->
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+
+        <hr>
+        <!-- Formulaire plus design 
+        g-3 c'est pour espacer les champs-->
+        <form action="" class="row g-3">
+            <div class=" col-md-6">
+                <label class="form-label" for="name">Nom</label>
+                <input class="form-control " type="text" name="name" id="name" >
+            </div>
+            <div class=" col-md-6">
+            
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control " type="email" name="email" id="email">
+            </div>
+            <!-- je veux que l'adresse soit en pleine largeur donc on va mettre un col-md-12 -->
+            <div class=" col-md-12">
+            
+                <label class="form-label" for="adresse">Adresse</label>
+                <input class="form-control " type="text" name="adresse" id="adresse">
+            </div>
+            <div class=" col-md-4">
+                <label class="form-label" for="cp">Code postal</label>
+                <input class="form-control " type="text" name="cp" id="cp" >
+            </div>
+            <div class=" col-md-8">
+            
+                <label class="form-label" for="ville">Ville</label>
+                <input class="form-control " type="text" name="ville" id="ville">
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-primary" type="submit">
+                    Envoyer
+                </button>
+            </div>
+        </form>
+    </div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+
+</body>
+</html>

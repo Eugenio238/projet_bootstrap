@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox avec bootstrap : flex-row</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+  <!-- le principe de flexbox c'est d'avoir un élément parent et des éléments enfants -->
+
+<!-- pour mettre en place notre flex box au niveau du container (notre éléments parents) on va appliquer
+la classe d-flex(quand on met d-flex simplement c'est le display-flex-row par défaut on a pas besoin de 
+compléter flex-row ) 
+d-flex = d-flex flex-row
+On se rend compte que les éléments se sont mis les uns à coté des autres à gauche(de la droite vers la gauche) et ce sont adapté à la hauteur de leurs
+container (élément parent)
+on peut faire un reverse donc au lieu d'aller de la droite vers la gauche mes éléments de la gauche vers la
+droite donc coller à droite
+On peut avoir aussi un d-flex flex-column-reverse les éléments vont se mettre du haut vers le bas
+On se rend compte que quand on met w-50 au niveau des éléments enfants les éléments s'entasse dans le container parent (
+    la largeur des 3 éléments enfants s'adaptent à la largeur du container parents donc la largeur des 50 ne s'appliquent pas)
+    On peut donc mettre au niveau de notre élément parent un flex-wrap (flex-wrap on force à la ligne et chaque élément à
+    une largeur de 50 , si les 3 n'arrivent pas à rester sur la meme ligne le 3eme se met à la ligne)
+On peut mettre un nowrap pour ne pas forcer le retour à la ligne (là sa revient à notre problème de départ) -->
+        <div style=" height:200px; " class="container bg-dark d-flex flex-row flex-wrap ">
+            <div class="w-50 text-white bg-primary" >1</div>
+            <div class="w-50 text-white bg-warning" >2</div>
+            <div class="w-50 text-white bg-success" >3</div>
+        </div>  
+         
+  </body>
+</html>

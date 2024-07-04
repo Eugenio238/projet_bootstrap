@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Le composant carousel </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- composant carousel 
+    On oublie pas de mettre le script car le carousel nécessite l'utilisation de javascript pour fonctionner
+-->
+
+<div class="container">
+    <!-- on va mettre à l'intérieur notre carousel -->
+    <!-- On créer une autre div qui aura les classes carousel et slide  -->
+    <div id="diaporama" class="carousel  slide" data-bs-ride="carousel" >
+            <!-- un autre élément div et on lui mettre cette fois la classe carousel-inner
+            Là on n'aura le container de nos éléments qui aurons à l'intérieur une image -->
+            <div class="carousel-inner">
+                        <!-- on aura une autre div qui aura la classe carousel-item (ce sont nos éléments) -->
+                        <div class="carousel-item active">
+                                <!-- on aura notre image
+                                Ce sera une image de type block et qui aura 100 pourcent de son container
+                                IL faut indiquer qu'elle image sera active donc il faut ajouter la classe active au niveau de notre carousel-item
+                                Ici on a mis active au niveau de la première image
+                                Pour le moment les images ne défilent pas donc on va faire une lecture automatique de mon carousel slide 
+                                en ajoutant l'attribu data-bs-ride="carousel"  -->
+                                <img src="images/A.jpg" alt="" class="d-block w-100 ">
+                        </div>
+                        <!-- on aura une autre div qui aura la classe carousel-item (ce sont nos éléments) -->
+                        <div class="carousel-item">
+                                <!-- on aura notre image
+                                Ce sera une image de type block et qui aura 100 pourcent de son container
+                                IL faut indiquer qu'elle image sera active donc il faut ajouter la classe active au niveau de notre carousel-item
+                                Ici on a mis active au niveau de la première image
+                                Pour le moment les images ne défilent pas donc on va faire une lecture automatique de mon carousel slide 
+                                en ajoutant l'attribu data  -->
+                                <img src="images/A39.jpg" alt="" class="d-block w-100 ">
+                        </div>
+                        <!-- on aura une autre div qui aura la classe carousel-item (ce sont nos éléments) -->
+                        <div class="carousel-item">
+                                <!-- on aura notre image
+                                Ce sera une image de type block et qui aura 100 pourcent de son container
+                                IL faut indiquer qu'elle image sera active donc il faut ajouter la classe active au niveau de notre carousel-item
+                                Ici on a mis active au niveau de la première image
+                                Pour le moment les images ne défilent pas donc on va faire une lecture automatique de mon carousel slide 
+                                en ajoutant l'attribu data  -->
+                                <img src="images/D.jpg" alt="" class="d-block w-100 ">
+                        </div>
+                        <!-- Ce qui serait intéressant maintenant c'est d'ajouter de petit boutons pour faire
+                        défiler les images à gauche et à droite
+                        On va se mettre dans la div de carousel-inner et ajouter les boutons precedent suivant donc ici  
+                        -->
+                        <!-- Button de type button , à ce bouton on lui ajoute la classe carousel-control-prev pour precedent-->
+                        <button type="button" class="carousel-control-prev" data-bs-target="#diaporama" data-bs-slide="prev">
+                            <!-- On va mettre à l'intérieur une balise span car elle va contenir l'icone du bouton avec la classe
+                            carousel-control-prev-icon -->
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <!-- Meme chose pour le bouton next-->
+                        <button type="button" class="carousel-control-next" data-bs-target="#diaporama" data-bs-slide="next">
+                            <!-- On va mettre à l'intérieur une balise span car elle va contenir l'icone du bouton avec la classe
+                            carousel-control-next-icon -->
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <!-- Pour faire fonctionner ces boutons on aura besoin de javascript
+                        Ces boutons doivent faire références aux sliders et on va nommer ces sliders avec des attributs id 
+                        Donc au niveau de la div de la carousel slide on va luui mettre un id diaporama
+                        et on revient sur les boutons pour mettre l'attribu data-bs-target="#diaporama"
+                        On va rajouter un autre attribu data-bs-slide="prev" pour precedent et  data-bs-slide="next" pour suivant-->
+
+            </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+
+</body>
+</html>

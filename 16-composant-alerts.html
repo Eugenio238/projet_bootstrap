@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Le composant alert </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- 
+  On va commencer par voir les composants
+  On va commencer par alert (c'est les petits messages qu'on voit souvent par exple après l'envoi de
+  mail ect...)
+  Ce sont des composants qui nécessite l'utilisation de javascript 
+  Donc dans la doc on ira copier le script et niv la coller avant la fermetture de notre body
+
+-->
+
+
+<!-- on va faire un élément div de classe container -->
+<div class=" container py-4 ">
+    <!-- Pour mettre en place notre alertt on va juste mettre la class 
+    alert suivii de la couleur alert-primary 
+On peut vouloir mettre un bouton en forme de croix pour fermer cette alert
+on va donc rajouter un bouton  -->
+    <div class="alert alert-primary alert-dismissible ">
+        Un message de couleur primary
+        <!-- on peut stylisé nos lien avec alert-link -->
+        <a href="#" class="alert-link">Mettre un lien</a>. 
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <!-- on va mettre la class btn-close
+            on aimerait bienn que notre bouton soit complètement à gauche pour que ce soit jolie donc
+        dans l'élément parent ,la div on ajoute la classe alert-dismissible
+        Pour le moment quand on lique sur le bouton il ne marche pas , il va falloir ajouter des attributs
+         -->
+        </button>
+    </div>
+    <div class="alert alert-secondary alert-dismissible">
+        Un message de couleur secondary
+        <a href="#" class="alert-link">Mettre un lien</a>.
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <!-- on va mettre la class btn-close
+            on aimerait bienn que notre bouton soit complètement à gauche pour que ce soit jolie donc
+        dans l'élément parent ,la div on ajoute la classe alert-dismissible
+        Pour le moment quand on lique sur le bouton il ne marche pas , il va falloir ajouter des attributs
+         -->
+        </button>
+    </div>
+    <div class="alert alert-success alert-dismissible">
+        Un message de couleur success.
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <!-- on va mettre la class btn-close
+            on aimerait bienn que notre bouton soit complètement à gauche pour que ce soit jolie donc
+        dans l'élément parent ,la div on ajoute la classe alert-dismissible
+        Pour le moment quand on lique sur le bouton il ne marche pas , il va falloir ajouter des attributs
+         -->
+        </button>
+    </div>
+    <div class="alert alert-danger alert-dismissible">
+        Un message de couleur danger.
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <!-- on va mettre la class btn-close
+            on aimerait bienn que notre bouton soit complètement à gauche pour que ce soit jolie donc
+        dans l'élément parent ,la div on ajoute la classe alert-dismissible
+        Pour le moment quand on lique sur le bouton il ne marche pas , il va falloir ajouter des attributs
+         -->
+        </button>
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+        Un message de couleur warning.
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <!-- on va mettre la class btn-close
+            on aimerait bienn que notre bouton soit complètement à gauche pour que ce soit jolie donc
+        dans l'élément parent ,la div on ajoute la classe alert-dismissible
+        Pour le moment quand on lique sur le bouton il ne marche pas , il va falloir ajouter des attributs
+         -->
+        </button>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+
+</body>
+</html>

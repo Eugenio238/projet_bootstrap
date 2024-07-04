@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Le composant Nav </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+<body>
+    <!-- composant Nav 
+        Ce composant nous permettra de faire un menu de navigation 
+    -->
+    <!-- style -->
+    <!-- <style>
+        .active{
+            color: red ;
+        }
+    </style> -->
+            <!-- On va mettre une balise header -->
+            <header class="bg-warning">
+                <!-- on va mettre une balise div de classe container  -->
+                <div class="container">
+                    <!-- On va faire notre menu de navigation avec la balise nav
+                    Dans cette élément nav on va mettre la class nav -->
+                    <nav class="nav">
+                        <!-- A l'intérieur on va y mettre des liens de navigations
+                        avec la classe nav-link -->
+                        <!-- On peut rendre un lien active pour dire on es sur tel page du lien avec active
+                        et rajouter aussi un style pour le différer des autres
+                        Pour le style voir balise style avant header à décommenter pour voir   -->
+                        <a href="" class="nav-link active" > Lien 1 </a>
+                        <a href="" class="nav-link" > Lien 2 </a>
+                        <a href="" class="nav-link" > Lien 3 </a>
+                        <!-- si on veut désactiver le lien 4 on peut mettre disabled -->
+                        <a href="" class="nav-link disabled" > Lien 4 </a>
+                    </nav>
+                </div>
+            </header>
+            <!-- Donc on a utiliser les liens avec a mais on peut le faire avec ul ce qui es recommander -->
+            <!-- Donc on aura une div de classe container -->
+            <div class="container">
+                        <!-- Dans cette div on va y mettre notre élément nav  -->
+                        <nav>
+                                <!-- on va donc mettre des liens dans une liste ul avec la class nav 
+                                Donc c'est ul et non nav qui a la class nav dans ce cas 
+                                On peut centrer nos élément avec la classe justify-content-center
+                                Si on veut on peut le caller à droite avec justify-content-end -->
+                                <ul class="nav justify-content-end">
+                                    <li><a href="" class="nav-link active" > Lien 1 </a></li>
+                                    <li><a href="" class="nav-link" > Lien 2 </a></li>
+
+                                                    <!-- Ici on aimerait faire un sous menu  -->
+                                                    <!-- Dans notre li on va mettre la classe nav-item et rajouter la classe dropdown
+                                                    On pourra donc maintenant générer une nouvelle liste pour faire un sous menu
+                                                    Pour que cela marche il faut pas oublier d'ajouter notre javascript
+                                                    voir lien sous menu (data-bs-toggle="dropdown")-->
+                                                    <li class="nav-item">
+                                                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Sous menu </a>
+                                                                <!-- On va ajouter maintenant notre liste -->
+                                                                <!-- Au niveau de notre ul on va rajouter la classe dropdown-menu -->
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- Au niveau de nos a on rajoute dropdown-item comme class -->
+                                                                    <li><a href="" class="dropdown-item" > Sous menu 1 </a></li>
+                                                                    <li><a href="" class="dropdown-item" > Sous menu </a></li>
+                                                                    <li><a href="" class="dropdown-item" > Sous menu3 </a></li>
+                                                                    <li><a href="" class="dropdown-item" > Sous menu 4 </a></li>
+                                                                </ul>
+                                                    </li>
+
+                                    <li><a href="" class="nav-link" > Lien 3 </a></li>
+                                    <!-- si on veut désactiver le lien 4 on peut mettre disabled -->
+                                    <li><a href="" class="nav-link disabled" > Lien 4 </a></li>
+                                </ul>
+                           
+                        </nav>
+            </div>
+            <!-- Mmeme chose mais on peut disposer nos éléments en colonnes -->
+            <div class="container">
+                <!-- Dans cette div on va y mettre notre élément nav  -->
+                <nav>
+                        <!-- on va donc mettre des liens dans une liste ul avec la class nav 
+                        Donc c'est ul et non nav qui a la class nav dans ce cas 
+                        On peut centrer nos élément avec la classe justify-content-center
+                        Si on veut on peut le caller à droite avec justify-content-end 
+                        Pour disposer nos éléments en colonnes c'est flex-column -->
+                        <ul class="nav flex-column">
+                            <li><a href="" class="nav-link active" > Lien 1 </a></li>
+                            <li><a href="" class="nav-link" > Lien 2 </a></li>
+                            <li><a href="" class="nav-link" > Lien 3 </a></li>
+                            <!-- si on veut désactiver le lien 4 on peut mettre disabled -->
+                            <li><a href="" class="nav-link disabled" > Lien 4 </a></li>
+                        </ul>
+                   
+                </nav>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Le composant Navbar </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+<body>
+    <!-- composant Navbar
+         Nous permettra de créer une barre da navigation avec un menu responsive design 
+         pour que dans sa petite version smartphone on puisse avoir une petite icone appelé menu burger 
+         qui nous permettra en cliquant decu d'ouvrir ou de fermer le menu et dans sa version grand écran 
+         le menu sera dans sa largeur 
+         Ce composant a besoin de la balise script qui va charger la bibliothèque javascript 
+    -->
+
+
+            <!-- On va créer notre balise nav dans laquelle on va mettre les classes navbar et 
+                 navbar-expand-préfixe_pour_gérer_taille_écran
+                 On ajoute une couleur de fond bg-light 
+            -->
+
+                <!-- c'est navbar-expand qui permet de plier et déplier notre menu burger -->
+                <nav class="navbar navbar-expand-lg bg-light">
+                        <!-- on va créer une div de classe container -->
+                        <div class="container">
+
+                            <!-- On va rajouter ici un élément bouton qui es notre menu burger avec la classe navbar-toggler-->
+                            <!-- Sur écran moin large mon menu burger vient remplacer mn menu sur écran large 
+                            On va rajouter maintenant du javascript en rajoutant des attributs supplémentaires au niveau du bouton 
+                            Pour indiquer qu'on voudra déplier le menu on va devoir ajouter un id dans la div qui suit le bouton
+                            -->
+                            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                                <span class="navbar-toggler-icon">
+
+                                </span>
+
+                            </button>
+                            <!-- on va mettre une autre div avec les classes collapse navbar-collapse  -->
+                            <div class="collapse navbar-collapse" id="menu">
+                                    <!-- On va construire notre menu dans ul -->
+                                    <ul class="navbar-nav justify-content-end">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> Accueil </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> Blog </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> A propos </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Contact</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                </nav>
+    
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+
+</body>
+</html>
